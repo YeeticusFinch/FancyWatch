@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string-array name="lights_array">
+    <item>Rainbow</item>
+    <item>Flashlight</item>
+    <item>Time</item>
+    <item>Epilepsy</item>
+    <item>Disco</item>
+    <item>Solid Color (slot 0)</item>
+    <item>Flag (3 slots)</item>
+    <item>Audio Spectrum (4 slots)</item>
+
+</string-array></resources>

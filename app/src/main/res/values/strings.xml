@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fancy Watch</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="FancyButton">Button</string>
+    <string name="music">MUSIC</string>
+    <string name="lights">LIGHTS</string>
+    <string name="system">SYSTEM</string>
+    <string name="button">Button</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="consol_text_here">consol text here</string>
+</resources>
