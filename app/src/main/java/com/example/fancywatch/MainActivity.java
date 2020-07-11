@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     BluetoothManager bluetoothManager = BluetoothManager.getInstance();
 
     TextView cText;
+    TextView c2Text;
     Spinner spin;
     EditText textInput;
     EditText c0, c1, c2, c3;
@@ -93,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         spin = findViewById(R.id.spinner);
         final Spinner spinBLE = findViewById(R.id.spinnerBLE);
         cText = findViewById(R.id.consolText);
+        c2Text = findViewById(R.id.consol2Text);
 
         //BLE STUFF
 
@@ -422,7 +424,16 @@ public class MainActivity extends AppCompatActivity {
         // Let's send a message:
         //deviceInterface.sendMessage("lights");
         //deviceInterface.sendMessage("sn"+sn);
+        cText.setText("Clearing App Cash");
+        songs.clear();
+        lights.clear();
+        help.clear();
         transmit("ha");
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         transmit("etime"+todayMillisex());
         transmit("time"+((todayMillisex()/3600000)%12+5)+":"+((todayMillisex()/60000)%60));
         transmit("songs");
@@ -458,7 +469,7 @@ public class MainActivity extends AppCompatActivity {
     private void onMessageReceived(String message) {
         // We received a message! Handle it here.
         //Toast.makeText(context, "Received a message! Message was: " + message, Toast.LENGTH_LONG).show(); // Replace context with your context instance.
-        cText.setText(message);
+        c2Text.setText(message);
         if (lastTransmit.equalsIgnoreCase("songs") && !(message.length()>4 && message.substring(0, 4).equals("hour"))) {
             if (message.charAt(message.indexOf(')')+1) == ' ')
                 songs.add(message.substring(message.indexOf(')')+2));
