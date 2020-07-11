@@ -422,6 +422,7 @@ public class MainActivity extends AppCompatActivity {
         // Let's send a message:
         //deviceInterface.sendMessage("lights");
         //deviceInterface.sendMessage("sn"+sn);
+        transmit("ha");
         transmit("etime"+todayMillisex());
         transmit("time"+((todayMillisex()/3600000)%12+5)+":"+((todayMillisex()/60000)%60));
         transmit("songs");
