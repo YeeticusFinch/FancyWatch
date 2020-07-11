@@ -4,3 +4,5 @@ Has like 90% of the features, if you want to send a custom command you can just 
 When running the app, first thing you do is click on your Bluetooth device and wait for it to connect, then you can click on the "Lights" tab, and then the "System" tab, if you do not do stuff in that order then bad stuff will happen.
 
 The apk is in FancyWatch\app\build\outputs\apk\debug
+
+I'll also be posting it here: https://drive.google.com/file/d/11J3fvxx-QO5mbOxpLtMy-4Oeykofus_8/view?usp=sharing
